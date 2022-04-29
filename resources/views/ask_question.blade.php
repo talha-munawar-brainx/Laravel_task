@@ -3,8 +3,8 @@
 @section('form')
     <h1>Ask a public Question</h1>
     <div class="form_div">
-    <form method="post" action="{{url('insert_question')}}" >
-        @csrf <!-- {{ csrf_field() }} -->
+        <form method="post" action="{{url('insert_question')}}">
+            @csrf <!-- {{ csrf_field() }} -->
     <h4>Title</h4>
     <p>Be specific and imagine you’re asking a question to another person</p>
     <input name="title" type="text" placeholder="e.g. Is there an R function for finding the index of an element in a vector?">
