@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.laravel.component" name="Laravel_4/25/22, 2:55 PM" invoke="/home/brainx/PhpstormProjects/laravel_task/artisan" alias="artisan" enabled="true" version="2">
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.laravel.component" name="Laravel_4/26/22, 2:11 PM" invoke="/home/brainx/PhpstormProjects/laravel_task2/artisan" alias="artisan" enabled="true" version="2">
   <extraData><![CDATA[version:3]]></extraData>
   <command>
     <name>_complete</name>
@@ -75,7 +75,7 @@
   </command>
   <command>
     <name>completion</name>
-    <help><![CDATA[The <b>completion</> command dumps the shell completion script required<br> to use shell autocompletion (currently only bash completion is supported).<br> <br> <comment>Static installation<br> -------------------</><br> <br> Dump the script to a global completion file and restart your shell:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan completion bash | sudo tee /etc/bash_completion.d/artisan</><br> <br> Or dump the script to a local file and source it:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan completion bash > completion.sh</><br> <br> <comment># source the file whenever you use the project</><br> <b>source completion.sh</><br> <br> <comment># or add this line at the end of your "~/.bashrc" file:</><br> <b>source /path/to/completion.sh</><br> <br> <comment>Dynamic installation<br> --------------------</><br> <br> Add this to the end of your shell configuration file (e.g. <b>"~/.bashrc"</>):<br> <br> <b>eval "$(/home/brainx/PhpstormProjects/laravel_task/artisan completion bash)"</><br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--debug</td><td></td><td>Tail the completion debug log</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[The <b>completion</> command dumps the shell completion script required<br> to use shell autocompletion (currently only bash completion is supported).<br> <br> <comment>Static installation<br> -------------------</><br> <br> Dump the script to a global completion file and restart your shell:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan completion bash | sudo tee /etc/bash_completion.d/artisan</><br> <br> Or dump the script to a local file and source it:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan completion bash > completion.sh</><br> <br> <comment># source the file whenever you use the project</><br> <b>source completion.sh</><br> <br> <comment># or add this line at the end of your "~/.bashrc" file:</><br> <b>source /path/to/completion.sh</><br> <br> <comment>Dynamic installation<br> --------------------</><br> <br> Add this to the end of your shell configuration file (e.g. <b>"~/.bashrc"</>):<br> <br> <b>eval "$(/home/brainx/PhpstormProjects/laravel_task2/artisan completion bash)"</><br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--debug</td><td></td><td>Tail the completion debug log</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>shell[=null]</params>
     <optionsBefore>
       <option name="--debug" shortcut="">
@@ -108,17 +108,63 @@
     </optionsBefore>
   </command>
   <command>
-    <name>down</name>
-    <help><![CDATA[Put the application into maintenance mode<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--message</td><td></td><td>The message for the maintenance mode</td></tr> <tr><td>--retry</td><td></td><td>The number of seconds after which the request may be retried</td></tr> <tr><td>--allow</td><td></td><td>IP or networks allowed to access the application while in maintenance mode</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <name>db</name>
+    <help><![CDATA[Start a new database CLI session<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--read</td><td></td><td>Connect to the read connection</td></tr> <tr><td>--write</td><td></td><td>Connect to the write connection</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <params>connection[=null]</params>
     <optionsBefore>
-      <option name="--message" shortcut="" pattern="equals">
-        <help><![CDATA[The message for the maintenance mode]]></help>
+      <option name="--read" shortcut="">
+        <help><![CDATA[Connect to the read connection]]></help>
+      </option>
+      <option name="--write" shortcut="">
+        <help><![CDATA[Connect to the write connection]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>down</name>
+    <help><![CDATA[Put the application into maintenance / demo mode<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--redirect</td><td></td><td>The path that users should be redirected to</td></tr> <tr><td>--render</td><td></td><td>The view that should be prerendered for display during maintenance mode</td></tr> <tr><td>--retry</td><td></td><td>The number of seconds after which the request may be retried</td></tr> <tr><td>--refresh</td><td></td><td>The number of seconds after which the browser may refresh</td></tr> <tr><td>--secret</td><td></td><td>The secret phrase that may be used to bypass maintenance mode</td></tr> <tr><td>--status</td><td></td><td>The status code that should be used when returning the maintenance mode response</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--redirect" shortcut="" pattern="equals">
+        <help><![CDATA[The path that users should be redirected to]]></help>
+      </option>
+      <option name="--render" shortcut="" pattern="equals">
+        <help><![CDATA[The view that should be prerendered for display during maintenance mode]]></help>
       </option>
       <option name="--retry" shortcut="" pattern="equals">
         <help><![CDATA[The number of seconds after which the request may be retried]]></help>
       </option>
-      <option name="--allow" shortcut="" pattern="equals">
-        <help><![CDATA[IP or networks allowed to access the application while in maintenance mode]]></help>
+      <option name="--refresh" shortcut="" pattern="equals">
+        <help><![CDATA[The number of seconds after which the browser may refresh]]></help>
+      </option>
+      <option name="--secret" shortcut="" pattern="equals">
+        <help><![CDATA[The secret phrase that may be used to bypass maintenance mode]]></help>
+      </option>
+      <option name="--status" shortcut="" pattern="equals">
+        <help><![CDATA[The status code that should be used when returning the maintenance mode response]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -178,7 +224,7 @@
   </command>
   <command>
     <name>help</name>
-    <help><![CDATA[The <b>help</b> command displays help for a given command:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan help list</b><br> <br> You can also output the help in other formats by using the <comment>--format</comment> option:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan help --format=xml list</b><br> <br> To display the list of available commands, please use the <b>list</b> command.<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--format</td><td></td><td>The output format (txt, xml, json, or md)</td></tr> <tr><td>--raw</td><td></td><td>To output raw command help</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[The <b>help</b> command displays help for a given command:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan help list</b><br> <br> You can also output the help in other formats by using the <comment>--format</comment> option:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan help --format=xml list</b><br> <br> To display the list of available commands, please use the <b>list</b> command.<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--format</td><td></td><td>The output format (txt, xml, json, or md)</td></tr> <tr><td>--raw</td><td></td><td>To output raw command help</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>command_name[=null]</params>
     <optionsBefore>
       <option name="--format" shortcut="" pattern="equals">
@@ -245,7 +291,7 @@
   </command>
   <command>
     <name>list</name>
-    <help><![CDATA[The <b>list</b> command lists all commands:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan list</b><br> <br> You can also display the commands for a specific namespace:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan list test</b><br> <br> You can also output the information in other formats by using the <comment>--format</comment> option:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan list --format=xml</b><br> <br> It's also possible to get raw list of commands (useful for embedding command runner):<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task/artisan list --raw</b><br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--raw</td><td></td><td>To output raw command list</td></tr> <tr><td>--format</td><td></td><td>The output format (txt, xml, json, or md)</td></tr> <tr><td>--short</td><td></td><td>To skip describing commands' arguments</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[The <b>list</b> command lists all commands:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan list</b><br> <br> You can also display the commands for a specific namespace:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan list test</b><br> <br> You can also output the information in other formats by using the <comment>--format</comment> option:<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan list --format=xml</b><br> <br> It's also possible to get raw list of commands (useful for embedding command runner):<br> <br> <b>/home/brainx/PhpstormProjects/laravel_task2/artisan list --raw</b><br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--raw</td><td></td><td>To output raw command list</td></tr> <tr><td>--format</td><td></td><td>The output format (txt, xml, json, or md)</td></tr> <tr><td>--short</td><td></td><td>To skip describing commands' arguments</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>namespace[=null]</params>
     <optionsBefore>
       <option name="--raw" shortcut="">
@@ -285,7 +331,7 @@
   </command>
   <command>
     <name>migrate</name>
-    <help><![CDATA[Run the database migrations<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--database</td><td></td><td>The database connection to use</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--path</td><td></td><td>The path(s) to the migrations files to be executed</td></tr> <tr><td>--realpath</td><td></td><td>Indicate any provided migration file paths are pre-resolved absolute paths</td></tr> <tr><td>--pretend</td><td></td><td>Dump the SQL queries that would be run</td></tr> <tr><td>--seed</td><td></td><td>Indicates if the seed task should be re-run</td></tr> <tr><td>--step</td><td></td><td>Force the migrations to be run so they can be rolled back individually</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Run the database migrations<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--database</td><td></td><td>The database connection to use</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--path</td><td></td><td>The path(s) to the migrations files to be executed</td></tr> <tr><td>--realpath</td><td></td><td>Indicate any provided migration file paths are pre-resolved absolute paths</td></tr> <tr><td>--schema-path</td><td></td><td>The path to a schema dump file</td></tr> <tr><td>--pretend</td><td></td><td>Dump the SQL queries that would be run</td></tr> <tr><td>--seed</td><td></td><td>Indicates if the seed task should be re-run</td></tr> <tr><td>--seeder</td><td></td><td>The class name of the root seeder</td></tr> <tr><td>--step</td><td></td><td>Force the migrations to be run so they can be rolled back individually</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--database" shortcut="" pattern="equals">
         <help><![CDATA[The database connection to use]]></help>
@@ -299,11 +345,17 @@
       <option name="--realpath" shortcut="">
         <help><![CDATA[Indicate any provided migration file paths are pre-resolved absolute paths]]></help>
       </option>
+      <option name="--schema-path" shortcut="" pattern="equals">
+        <help><![CDATA[The path to a schema dump file]]></help>
+      </option>
       <option name="--pretend" shortcut="">
         <help><![CDATA[Dump the SQL queries that would be run]]></help>
       </option>
       <option name="--seed" shortcut="">
         <help><![CDATA[Indicates if the seed task should be re-run]]></help>
+      </option>
+      <option name="--seeder" shortcut="" pattern="equals">
+        <help><![CDATA[The class name of the root seeder]]></help>
       </option>
       <option name="--step" shortcut="">
         <help><![CDATA[Force the migrations to be run so they can be rolled back individually]]></help>
@@ -366,7 +418,7 @@
   </command>
   <command>
     <name>serve</name>
-    <help><![CDATA[Serve the application on the PHP development server<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--host</td><td></td><td>The host address to serve the application on</td></tr> <tr><td>--port</td><td></td><td>The port to serve the application on</td></tr> <tr><td>--tries</td><td></td><td>The max number of ports to attempt to serve from</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Serve the application on the PHP development server<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--host</td><td></td><td>The host address to serve the application on</td></tr> <tr><td>--port</td><td></td><td>The port to serve the application on</td></tr> <tr><td>--tries</td><td></td><td>The max number of ports to attempt to serve from</td></tr> <tr><td>--no-reload</td><td></td><td>Do not reload the development server on .env file changes</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--host" shortcut="" pattern="equals">
         <help><![CDATA[The host address to serve the application on]]></help>
@@ -376,6 +428,9 @@
       </option>
       <option name="--tries" shortcut="" pattern="equals">
         <help><![CDATA[The max number of ports to attempt to serve from]]></help>
+      </option>
+      <option name="--no-reload" shortcut="">
+        <help><![CDATA[Do not reload the development server on .env file changes]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -405,10 +460,16 @@
   </command>
   <command>
     <name>test</name>
-    <help><![CDATA[Run the application tests<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--without-tty</td><td></td><td>Disable output to TTY</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Run the application tests<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--without-tty</td><td></td><td>Disable output to TTY</td></tr> <tr><td>--parallel</td><td>(-p)</td><td>Indicates if the tests should run in parallel</td></tr> <tr><td>--recreate-databases</td><td></td><td>Indicates if the test databases should be re-created</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--without-tty" shortcut="">
         <help><![CDATA[Disable output to TTY]]></help>
+      </option>
+      <option name="--parallel" shortcut="-p">
+        <help><![CDATA[Indicates if the tests should run in parallel]]></help>
+      </option>
+      <option name="--recreate-databases" shortcut="">
+        <help><![CDATA[Indicates if the test databases should be re-created]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -689,6 +750,7 @@
   <command>
     <name>db:seed</name>
     <help><![CDATA[Seed the database with records<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--class</td><td></td><td>The class name of the root seeder</td></tr> <tr><td>--database</td><td></td><td>The database connection to seed</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <params>class[=null]</params>
     <optionsBefore>
       <option name="--class" shortcut="" pattern="equals">
         <help><![CDATA[The class name of the root seeder]]></help>
@@ -990,11 +1052,17 @@
   </command>
   <command>
     <name>make:command</name>
-    <help><![CDATA[Create a new Artisan command<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--command</td><td></td><td>The terminal command that should be assigned</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new Artisan command<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--command</td><td></td><td>The terminal command that should be assigned</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Console command</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Console command</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--command" shortcut="" pattern="equals">
         <help><![CDATA[The terminal command that should be assigned]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Console command]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Console command]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1061,11 +1129,14 @@
   </command>
   <command>
     <name>make:controller</name>
-    <help><![CDATA[Create a new controller class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--api</td><td></td><td>Exclude the create and edit methods from the controller.</td></tr> <tr><td>--force</td><td></td><td>Create the class even if the controller already exists</td></tr> <tr><td>--invokable</td><td>(-i)</td><td>Generate a single method, invokable controller class.</td></tr> <tr><td>--model</td><td>(-m)</td><td>Generate a resource controller for the given model.</td></tr> <tr><td>--parent</td><td>(-p)</td><td>Generate a nested resource controller class.</td></tr> <tr><td>--resource</td><td>(-r)</td><td>Generate a resource controller class.</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new controller class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--api</td><td></td><td>Exclude the create and edit methods from the controller.</td></tr> <tr><td>--type</td><td></td><td>Manually specify the controller stub file to use.</td></tr> <tr><td>--force</td><td></td><td>Create the class even if the controller already exists</td></tr> <tr><td>--invokable</td><td>(-i)</td><td>Generate a single method, invokable controller class.</td></tr> <tr><td>--model</td><td>(-m)</td><td>Generate a resource controller for the given model.</td></tr> <tr><td>--parent</td><td>(-p)</td><td>Generate a nested resource controller class.</td></tr> <tr><td>--resource</td><td>(-r)</td><td>Generate a resource controller class.</td></tr> <tr><td>--requests</td><td>(-R)</td><td>Generate FormRequest classes for store and update.</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Controller</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Controller</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--api" shortcut="">
         <help><![CDATA[Exclude the create and edit methods from the controller.]]></help>
+      </option>
+      <option name="--type" shortcut="" pattern="equals">
+        <help><![CDATA[Manually specify the controller stub file to use.]]></help>
       </option>
       <option name="--force" shortcut="">
         <help><![CDATA[Create the class even if the controller already exists]]></help>
@@ -1081,6 +1152,15 @@
       </option>
       <option name="--resource" shortcut="-r">
         <help><![CDATA[Generate a resource controller class.]]></help>
+      </option>
+      <option name="--requests" shortcut="-R">
+        <help><![CDATA[Generate FormRequest classes for store and update.]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Controller]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Controller]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1212,11 +1292,17 @@
   </command>
   <command>
     <name>make:job</name>
-    <help><![CDATA[Create a new job class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--sync</td><td></td><td>Indicates that job should be synchronous</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new job class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--sync</td><td></td><td>Indicates that job should be synchronous</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Job</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Job</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--sync" shortcut="">
         <help><![CDATA[Indicates that job should be synchronous]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Job]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Job]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1246,7 +1332,7 @@
   </command>
   <command>
     <name>make:listener</name>
-    <help><![CDATA[Create a new event listener class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--event</td><td>(-e)</td><td>The event class being listened for</td></tr> <tr><td>--queued</td><td></td><td>Indicates the event listener should be queued</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new event listener class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--event</td><td>(-e)</td><td>The event class being listened for</td></tr> <tr><td>--queued</td><td></td><td>Indicates the event listener should be queued</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Listener</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Listener</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--event" shortcut="-e" pattern="equals">
@@ -1254,6 +1340,12 @@
       </option>
       <option name="--queued" shortcut="">
         <help><![CDATA[Indicates the event listener should be queued]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Listener]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Listener]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1283,7 +1375,7 @@
   </command>
   <command>
     <name>make:mail</name>
-    <help><![CDATA[Create a new email class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--force</td><td>(-f)</td><td>Create the class even if the mailable already exists</td></tr> <tr><td>--markdown</td><td>(-m)</td><td>Create a new Markdown template for the mailable</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new email class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--force</td><td>(-f)</td><td>Create the class even if the mailable already exists</td></tr> <tr><td>--markdown</td><td>(-m)</td><td>Create a new Markdown template for the mailable</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Mail</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Mail</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--force" shortcut="-f">
@@ -1291,6 +1383,12 @@
       </option>
       <option name="--markdown" shortcut="-m" pattern="equals">
         <help><![CDATA[Create a new Markdown template for the mailable]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Mail]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Mail]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1320,9 +1418,15 @@
   </command>
   <command>
     <name>make:middleware</name>
-    <help><![CDATA[Create a new middleware class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new middleware class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Middleware</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Middleware</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Middleware]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Middleware]]></help>
+      </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -1397,11 +1501,11 @@
   </command>
   <command>
     <name>make:model</name>
-    <help><![CDATA[Create a new Eloquent model class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--all</td><td>(-a)</td><td>Generate a migration, seeder, factory, and resource controller for the model</td></tr> <tr><td>--controller</td><td>(-c)</td><td>Create a new controller for the model</td></tr> <tr><td>--factory</td><td>(-f)</td><td>Create a new factory for the model</td></tr> <tr><td>--force</td><td></td><td>Create the class even if the model already exists</td></tr> <tr><td>--migration</td><td>(-m)</td><td>Create a new migration file for the model</td></tr> <tr><td>--seed</td><td>(-s)</td><td>Create a new seeder file for the model</td></tr> <tr><td>--pivot</td><td>(-p)</td><td>Indicates if the generated model should be a custom intermediate table model</td></tr> <tr><td>--resource</td><td>(-r)</td><td>Indicates if the generated controller should be a resource controller</td></tr> <tr><td>--api</td><td></td><td>Indicates if the generated controller should be an API controller</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new Eloquent model class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--all</td><td>(-a)</td><td>Generate a migration, seeder, factory, policy, and resource controller for the model</td></tr> <tr><td>--controller</td><td>(-c)</td><td>Create a new controller for the model</td></tr> <tr><td>--factory</td><td>(-f)</td><td>Create a new factory for the model</td></tr> <tr><td>--force</td><td></td><td>Create the class even if the model already exists</td></tr> <tr><td>--migration</td><td>(-m)</td><td>Create a new migration file for the model</td></tr> <tr><td>--policy</td><td></td><td>Create a new policy for the model</td></tr> <tr><td>--seed</td><td>(-s)</td><td>Create a new seeder for the model</td></tr> <tr><td>--pivot</td><td>(-p)</td><td>Indicates if the generated model should be a custom intermediate table model</td></tr> <tr><td>--resource</td><td>(-r)</td><td>Indicates if the generated controller should be a resource controller</td></tr> <tr><td>--api</td><td></td><td>Indicates if the generated controller should be an API controller</td></tr> <tr><td>--requests</td><td>(-R)</td><td>Create new form request classes and use them in the resource controller</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Model</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Model</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--all" shortcut="-a">
-        <help><![CDATA[Generate a migration, seeder, factory, and resource controller for the model]]></help>
+        <help><![CDATA[Generate a migration, seeder, factory, policy, and resource controller for the model]]></help>
       </option>
       <option name="--controller" shortcut="-c">
         <help><![CDATA[Create a new controller for the model]]></help>
@@ -1415,8 +1519,11 @@
       <option name="--migration" shortcut="-m">
         <help><![CDATA[Create a new migration file for the model]]></help>
       </option>
+      <option name="--policy" shortcut="">
+        <help><![CDATA[Create a new policy for the model]]></help>
+      </option>
       <option name="--seed" shortcut="-s">
-        <help><![CDATA[Create a new seeder file for the model]]></help>
+        <help><![CDATA[Create a new seeder for the model]]></help>
       </option>
       <option name="--pivot" shortcut="-p">
         <help><![CDATA[Indicates if the generated model should be a custom intermediate table model]]></help>
@@ -1426,6 +1533,15 @@
       </option>
       <option name="--api" shortcut="">
         <help><![CDATA[Indicates if the generated controller should be an API controller]]></help>
+      </option>
+      <option name="--requests" shortcut="-R">
+        <help><![CDATA[Create new form request classes and use them in the resource controller]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Model]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Model]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1455,7 +1571,7 @@
   </command>
   <command>
     <name>make:notification</name>
-    <help><![CDATA[Create a new notification class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--force</td><td>(-f)</td><td>Create the class even if the notification already exists</td></tr> <tr><td>--markdown</td><td>(-m)</td><td>Create a new Markdown template for the notification</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new notification class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--force</td><td>(-f)</td><td>Create the class even if the notification already exists</td></tr> <tr><td>--markdown</td><td>(-m)</td><td>Create a new Markdown template for the notification</td></tr> <tr><td>--test</td><td></td><td>Generate an accompanying PHPUnit test for the Notification</td></tr> <tr><td>--pest</td><td></td><td>Generate an accompanying Pest test for the Notification</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
       <option name="--force" shortcut="-f">
@@ -1463,6 +1579,12 @@
       </option>
       <option name="--markdown" shortcut="-m" pattern="equals">
         <help><![CDATA[Create a new Markdown template for the notification]]></help>
+      </option>
+      <option name="--test" shortcut="">
+        <help><![CDATA[Generate an accompanying PHPUnit test for the Notification]]></help>
+      </option>
+      <option name="--pest" shortcut="">
+        <help><![CDATA[Generate an accompanying Pest test for the Notification]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1659,9 +1781,12 @@
   </command>
   <command>
     <name>make:rule</name>
-    <help><![CDATA[Create a new validation rule<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new validation rule<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--implicit</td><td>(-i)</td><td>Generate an implicit rule.</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
+      <option name="--implicit" shortcut="-i">
+        <help><![CDATA[Generate an implicit rule.]]></help>
+      </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -1721,11 +1846,14 @@
   </command>
   <command>
     <name>make:test</name>
-    <help><![CDATA[Create a new test class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--unit</td><td></td><td>Create a unit test</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create a new test class<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--unit</td><td>(-u)</td><td>Create a unit test.</td></tr> <tr><td>--pest</td><td>(-p)</td><td>Create a Pest test.</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>name</params>
     <optionsBefore>
-      <option name="--unit" shortcut="">
-        <help><![CDATA[Create a unit test]]></help>
+      <option name="--unit" shortcut="-u">
+        <help><![CDATA[Create a unit test.]]></help>
+      </option>
+      <option name="--pest" shortcut="-p">
+        <help><![CDATA[Create a Pest test.]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -1755,7 +1883,7 @@
   </command>
   <command>
     <name>migrate:fresh</name>
-    <help><![CDATA[Drop all tables and re-run all migrations<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--database</td><td></td><td>The database connection to use</td></tr> <tr><td>--drop-views</td><td></td><td>Drop all tables and views</td></tr> <tr><td>--drop-types</td><td></td><td>Drop all tables and types (Postgres only)</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--path</td><td></td><td>The path(s) to the migrations files to be executed</td></tr> <tr><td>--realpath</td><td></td><td>Indicate any provided migration file paths are pre-resolved absolute paths</td></tr> <tr><td>--seed</td><td></td><td>Indicates if the seed task should be re-run</td></tr> <tr><td>--seeder</td><td></td><td>The class name of the root seeder</td></tr> <tr><td>--step</td><td></td><td>Force the migrations to be run so they can be rolled back individually</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Drop all tables and re-run all migrations<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--database</td><td></td><td>The database connection to use</td></tr> <tr><td>--drop-views</td><td></td><td>Drop all tables and views</td></tr> <tr><td>--drop-types</td><td></td><td>Drop all tables and types (Postgres only)</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--path</td><td></td><td>The path(s) to the migrations files to be executed</td></tr> <tr><td>--realpath</td><td></td><td>Indicate any provided migration file paths are pre-resolved absolute paths</td></tr> <tr><td>--schema-path</td><td></td><td>The path to a schema dump file</td></tr> <tr><td>--seed</td><td></td><td>Indicates if the seed task should be re-run</td></tr> <tr><td>--seeder</td><td></td><td>The class name of the root seeder</td></tr> <tr><td>--step</td><td></td><td>Force the migrations to be run so they can be rolled back individually</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--database" shortcut="" pattern="equals">
         <help><![CDATA[The database connection to use]]></help>
@@ -1774,6 +1902,9 @@
       </option>
       <option name="--realpath" shortcut="">
         <help><![CDATA[Indicate any provided migration file paths are pre-resolved absolute paths]]></help>
+      </option>
+      <option name="--schema-path" shortcut="" pattern="equals">
+        <help><![CDATA[The path to a schema dump file]]></help>
       </option>
       <option name="--seed" shortcut="">
         <help><![CDATA[Indicates if the seed task should be re-run]]></help>
@@ -2027,6 +2158,48 @@
     </optionsBefore>
   </command>
   <command>
+    <name>model:prune</name>
+    <help><![CDATA[Prune models that are no longer needed<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--model</td><td></td><td>Class names of the models to be pruned</td></tr> <tr><td>--except</td><td></td><td>Class names of the models to be excluded from pruning</td></tr> <tr><td>--chunk</td><td></td><td>The number of models to retrieve per chunk of models to be deleted</td></tr> <tr><td>--pretend</td><td></td><td>Display the number of prunable records found instead of deleting them</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--model" shortcut="" pattern="equals">
+        <help><![CDATA[Class names of the models to be pruned]]></help>
+      </option>
+      <option name="--except" shortcut="" pattern="equals">
+        <help><![CDATA[Class names of the models to be excluded from pruning]]></help>
+      </option>
+      <option name="--chunk" shortcut="" pattern="equals">
+        <help><![CDATA[The number of models to retrieve per chunk of models to be deleted]]></help>
+      </option>
+      <option name="--pretend" shortcut="">
+        <help><![CDATA[Display the number of prunable records found instead of deleting them]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
     <name>notifications:table</name>
     <help><![CDATA[Create a migration for the notifications table<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
@@ -2090,6 +2263,73 @@
     <name>package:discover</name>
     <help><![CDATA[Rebuild the cached package manifest<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:batches-table</name>
+    <help><![CDATA[Create a migration for the batches database table<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:clear</name>
+    <help><![CDATA[Delete all of the jobs from the specified queue<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--queue</td><td></td><td>The name of the queue to clear</td></tr> <tr><td>--force</td><td></td><td>Force the operation to run when in production</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <params>connection[=null]</params>
+    <optionsBefore>
+      <option name="--queue" shortcut="" pattern="equals">
+        <help><![CDATA[The name of the queue to clear]]></help>
+      </option>
+      <option name="--force" shortcut="">
+        <help><![CDATA[Force the operation to run when in production]]></help>
+      </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -2239,11 +2479,17 @@
   </command>
   <command>
     <name>queue:listen</name>
-    <help><![CDATA[Listen to a given queue<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--delay</td><td></td><td>The number of seconds to delay failed jobs</td></tr> <tr><td>--force</td><td></td><td>Force the worker to run even in maintenance mode</td></tr> <tr><td>--memory</td><td></td><td>The memory limit in megabytes</td></tr> <tr><td>--queue</td><td></td><td>The queue to listen on</td></tr> <tr><td>--sleep</td><td></td><td>Number of seconds to sleep when no job is available</td></tr> <tr><td>--timeout</td><td></td><td>The number of seconds a child process can run</td></tr> <tr><td>--tries</td><td></td><td>Number of times to attempt a job before logging it failed</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Listen to a given queue<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--name</td><td></td><td>The name of the worker</td></tr> <tr><td>--delay</td><td></td><td>The number of seconds to delay failed jobs (Deprecated)</td></tr> <tr><td>--backoff</td><td></td><td>The number of seconds to wait before retrying a job that encountered an uncaught exception</td></tr> <tr><td>--force</td><td></td><td>Force the worker to run even in maintenance mode</td></tr> <tr><td>--memory</td><td></td><td>The memory limit in megabytes</td></tr> <tr><td>--queue</td><td></td><td>The queue to listen on</td></tr> <tr><td>--sleep</td><td></td><td>Number of seconds to sleep when no job is available</td></tr> <tr><td>--timeout</td><td></td><td>The number of seconds a child process can run</td></tr> <tr><td>--tries</td><td></td><td>Number of times to attempt a job before logging it failed</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>connection[=null]</params>
     <optionsBefore>
+      <option name="--name" shortcut="" pattern="equals">
+        <help><![CDATA[The name of the worker]]></help>
+      </option>
       <option name="--delay" shortcut="" pattern="equals">
-        <help><![CDATA[The number of seconds to delay failed jobs]]></help>
+        <help><![CDATA[The number of seconds to delay failed jobs (Deprecated)]]></help>
+      </option>
+      <option name="--backoff" shortcut="" pattern="equals">
+        <help><![CDATA[The number of seconds to wait before retrying a job that encountered an uncaught exception]]></help>
       </option>
       <option name="--force" shortcut="">
         <help><![CDATA[Force the worker to run even in maintenance mode]]></help>
@@ -2262,6 +2508,109 @@
       </option>
       <option name="--tries" shortcut="" pattern="equals">
         <help><![CDATA[Number of times to attempt a job before logging it failed]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:monitor</name>
+    <help><![CDATA[Monitor the size of the specified queues<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--max</td><td></td><td>The maximum number of jobs that can be on the queue before an event is dispatched</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <params>queues</params>
+    <optionsBefore>
+      <option name="--max" shortcut="" pattern="equals">
+        <help><![CDATA[The maximum number of jobs that can be on the queue before an event is dispatched]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:prune-batches</name>
+    <help><![CDATA[Prune stale entries from the batches database<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--hours</td><td></td><td>The number of hours to retain batch data</td></tr> <tr><td>--unfinished</td><td></td><td>The number of hours to retain unfinished batch data</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--hours" shortcut="" pattern="equals">
+        <help><![CDATA[The number of hours to retain batch data]]></help>
+      </option>
+      <option name="--unfinished" shortcut="" pattern="equals">
+        <help><![CDATA[The number of hours to retain unfinished batch data]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:prune-failed</name>
+    <help><![CDATA[Prune stale entries from the failed jobs table<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--hours</td><td></td><td>The number of hours to retain failed jobs data</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--hours" shortcut="" pattern="equals">
+        <help><![CDATA[The number of hours to retain failed jobs data]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
@@ -2321,12 +2670,46 @@
   </command>
   <command>
     <name>queue:retry</name>
-    <help><![CDATA[Retry a failed queue job<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--range</td><td></td><td>Range of job IDs (numeric) to be retried</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Retry a failed queue job<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--queue</td><td></td><td>Retry all of the failed jobs for the specified queue</td></tr> <tr><td>--range</td><td></td><td>Range of job IDs (numeric) to be retried</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>id[=null]</params>
     <optionsBefore>
+      <option name="--queue" shortcut="" pattern="equals">
+        <help><![CDATA[Retry all of the failed jobs for the specified queue]]></help>
+      </option>
       <option name="--range" shortcut="" pattern="equals">
         <help><![CDATA[Range of job IDs (numeric) to be retried]]></help>
       </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>queue:retry-batch</name>
+    <help><![CDATA[Retry the failed jobs for a batch<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <params>id</params>
+    <optionsBefore>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -2385,9 +2768,12 @@
   </command>
   <command>
     <name>queue:work</name>
-    <help><![CDATA[Start processing jobs on the queue as a daemon<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--queue</td><td></td><td>The names of the queues to work</td></tr> <tr><td>--daemon</td><td></td><td>Run the worker in daemon mode (Deprecated)</td></tr> <tr><td>--once</td><td></td><td>Only process the next job on the queue</td></tr> <tr><td>--stop-when-empty</td><td></td><td>Stop when the queue is empty</td></tr> <tr><td>--delay</td><td></td><td>The number of seconds to delay failed jobs</td></tr> <tr><td>--force</td><td></td><td>Force the worker to run even in maintenance mode</td></tr> <tr><td>--memory</td><td></td><td>The memory limit in megabytes</td></tr> <tr><td>--sleep</td><td></td><td>Number of seconds to sleep when no job is available</td></tr> <tr><td>--timeout</td><td></td><td>The number of seconds a child process can run</td></tr> <tr><td>--tries</td><td></td><td>Number of times to attempt a job before logging it failed</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Start processing jobs on the queue as a daemon<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--name</td><td></td><td>The name of the worker</td></tr> <tr><td>--queue</td><td></td><td>The names of the queues to work</td></tr> <tr><td>--daemon</td><td></td><td>Run the worker in daemon mode (Deprecated)</td></tr> <tr><td>--once</td><td></td><td>Only process the next job on the queue</td></tr> <tr><td>--stop-when-empty</td><td></td><td>Stop when the queue is empty</td></tr> <tr><td>--delay</td><td></td><td>The number of seconds to delay failed jobs (Deprecated)</td></tr> <tr><td>--backoff</td><td></td><td>The number of seconds to wait before retrying a job that encountered an uncaught exception</td></tr> <tr><td>--max-jobs</td><td></td><td>The number of jobs to process before stopping</td></tr> <tr><td>--max-time</td><td></td><td>The maximum number of seconds the worker should run</td></tr> <tr><td>--force</td><td></td><td>Force the worker to run even in maintenance mode</td></tr> <tr><td>--memory</td><td></td><td>The memory limit in megabytes</td></tr> <tr><td>--sleep</td><td></td><td>Number of seconds to sleep when no job is available</td></tr> <tr><td>--rest</td><td></td><td>Number of seconds to rest between jobs</td></tr> <tr><td>--timeout</td><td></td><td>The number of seconds a child process can run</td></tr> <tr><td>--tries</td><td></td><td>Number of times to attempt a job before logging it failed</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <params>connection[=null]</params>
     <optionsBefore>
+      <option name="--name" shortcut="" pattern="equals">
+        <help><![CDATA[The name of the worker]]></help>
+      </option>
       <option name="--queue" shortcut="" pattern="equals">
         <help><![CDATA[The names of the queues to work]]></help>
       </option>
@@ -2401,7 +2787,16 @@
         <help><![CDATA[Stop when the queue is empty]]></help>
       </option>
       <option name="--delay" shortcut="" pattern="equals">
-        <help><![CDATA[The number of seconds to delay failed jobs]]></help>
+        <help><![CDATA[The number of seconds to delay failed jobs (Deprecated)]]></help>
+      </option>
+      <option name="--backoff" shortcut="" pattern="equals">
+        <help><![CDATA[The number of seconds to wait before retrying a job that encountered an uncaught exception]]></help>
+      </option>
+      <option name="--max-jobs" shortcut="" pattern="equals">
+        <help><![CDATA[The number of jobs to process before stopping]]></help>
+      </option>
+      <option name="--max-time" shortcut="" pattern="equals">
+        <help><![CDATA[The maximum number of seconds the worker should run]]></help>
       </option>
       <option name="--force" shortcut="">
         <help><![CDATA[Force the worker to run even in maintenance mode]]></help>
@@ -2411,6 +2806,9 @@
       </option>
       <option name="--sleep" shortcut="" pattern="equals">
         <help><![CDATA[Number of seconds to sleep when no job is available]]></help>
+      </option>
+      <option name="--rest" shortcut="" pattern="equals">
+        <help><![CDATA[Number of seconds to rest between jobs]]></help>
       </option>
       <option name="--timeout" shortcut="" pattern="equals">
         <help><![CDATA[The number of seconds a child process can run]]></help>
@@ -2506,7 +2904,7 @@
   </command>
   <command>
     <name>route:list</name>
-    <help><![CDATA[List all registered routes<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--columns</td><td></td><td>Columns to include in the route table</td></tr> <tr><td>--compact</td><td>(-c)</td><td>Only show method, URI and action columns</td></tr> <tr><td>--json</td><td></td><td>Output the route list as JSON</td></tr> <tr><td>--method</td><td></td><td>Filter the routes by method</td></tr> <tr><td>--name</td><td></td><td>Filter the routes by name</td></tr> <tr><td>--path</td><td></td><td>Filter the routes by path</td></tr> <tr><td>--reverse</td><td>(-r)</td><td>Reverse the ordering of the routes</td></tr> <tr><td>--sort</td><td></td><td>The column (domain, method, uri, name, action, middleware) to sort by</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[List all registered routes<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--columns</td><td></td><td>Columns to include in the route table</td></tr> <tr><td>--compact</td><td>(-c)</td><td>Only show method, URI and action columns</td></tr> <tr><td>--json</td><td></td><td>Output the route list as JSON</td></tr> <tr><td>--method</td><td></td><td>Filter the routes by method</td></tr> <tr><td>--name</td><td></td><td>Filter the routes by name</td></tr> <tr><td>--path</td><td></td><td>Only show routes matching the given path pattern</td></tr> <tr><td>--except-path</td><td></td><td>Do not display the routes matching the given path pattern</td></tr> <tr><td>--reverse</td><td>(-r)</td><td>Reverse the ordering of the routes</td></tr> <tr><td>--sort</td><td></td><td>The column (precedence, domain, method, uri, name, action, middleware) to sort by</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--columns" shortcut="" pattern="equals">
         <help><![CDATA[Columns to include in the route table]]></help>
@@ -2524,14 +2922,146 @@
         <help><![CDATA[Filter the routes by name]]></help>
       </option>
       <option name="--path" shortcut="" pattern="equals">
-        <help><![CDATA[Filter the routes by path]]></help>
+        <help><![CDATA[Only show routes matching the given path pattern]]></help>
+      </option>
+      <option name="--except-path" shortcut="" pattern="equals">
+        <help><![CDATA[Do not display the routes matching the given path pattern]]></help>
       </option>
       <option name="--reverse" shortcut="-r">
         <help><![CDATA[Reverse the ordering of the routes]]></help>
       </option>
       <option name="--sort" shortcut="" pattern="equals">
-        <help><![CDATA[The column (domain, method, uri, name, action, middleware) to sort by]]></help>
+        <help><![CDATA[The column (precedence, domain, method, uri, name, action, middleware) to sort by]]></help>
       </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>sail:install</name>
+    <help><![CDATA[Install Laravel Sail's default Docker Compose file<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--with</td><td></td><td>The services that should be included in the installation</td></tr> <tr><td>--devcontainer</td><td></td><td>Create a .devcontainer configuration directory</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--with" shortcut="" pattern="equals">
+        <help><![CDATA[The services that should be included in the installation]]></help>
+      </option>
+      <option name="--devcontainer" shortcut="">
+        <help><![CDATA[Create a .devcontainer configuration directory]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>sail:publish</name>
+    <help><![CDATA[Publish the Laravel Sail Docker files<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>sanctum:prune-expired</name>
+    <help><![CDATA[Prune tokens expired for more than specified number of hours.<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--hours</td><td></td><td>The number of hours to retain expired Sanctum tokens</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--hours" shortcut="" pattern="equals">
+        <help><![CDATA[The number of hours to retain expired Sanctum tokens]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>schedule:clear-cache</name>
+    <help><![CDATA[Delete the cached mutex files created by scheduler<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -2590,9 +3120,141 @@
     </optionsBefore>
   </command>
   <command>
+    <name>schedule:list</name>
+    <help><![CDATA[List the scheduled commands<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--timezone</td><td></td><td>The timezone that times should be displayed in</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--timezone" shortcut="" pattern="equals">
+        <help><![CDATA[The timezone that times should be displayed in]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
     <name>schedule:run</name>
     <help><![CDATA[Run the scheduled commands<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>schedule:test</name>
+    <help><![CDATA[Run a scheduled command<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>schedule:work</name>
+    <help><![CDATA[Start the schedule worker<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="" pattern="equals">
+        <help><![CDATA[The environment the command should run under]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>schema:dump</name>
+    <help><![CDATA[Dump the given database schema<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--database</td><td></td><td>The database connection to use</td></tr> <tr><td>--path</td><td></td><td>The path where the schema dump file should be stored</td></tr> <tr><td>--prune</td><td></td><td>Delete all existing migration files</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--database" shortcut="" pattern="equals">
+        <help><![CDATA[The database connection to use]]></help>
+      </option>
+      <option name="--path" shortcut="" pattern="equals">
+        <help><![CDATA[The path where the schema dump file should be stored]]></help>
+      </option>
+      <option name="--prune" shortcut="">
+        <help><![CDATA[Delete all existing migration files]]></help>
+      </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
       </option>
@@ -2651,10 +3313,13 @@
   </command>
   <command>
     <name>storage:link</name>
-    <help><![CDATA[Create the symbolic links configured for the application<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--relative</td><td></td><td>Create the symbolic link using relative paths</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
+    <help><![CDATA[Create the symbolic links configured for the application<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--relative</td><td></td><td>Create the symbolic link using relative paths</td></tr> <tr><td>--force</td><td></td><td>Recreate existing symbolic links</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td></td><td>The environment the command should run under</td></tr> </table> <br/>]]></help>
     <optionsBefore>
       <option name="--relative" shortcut="">
         <help><![CDATA[Create the symbolic link using relative paths]]></help>
+      </option>
+      <option name="--force" shortcut="">
+        <help><![CDATA[Recreate existing symbolic links]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>

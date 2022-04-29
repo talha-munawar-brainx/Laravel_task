@@ -13,6 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+$questions = App\Models\Questions::all();
+$answers = App\Models\Answers::all();
+
+
+
+
+
+Route::get('/', function () use ($questions) {
+    return view('homePage', ['questions' => $questions]);
 });
+
+Route::get('/answers/{question_id}',function ($slug) use ($answers,$questions) {
+   return view('answers',['answers' => $answers->where('question_id',$slug),'question'=>$questions->find($slug)]);
+});
+
+Route::get('/questions/ask',function (){
+    return view('ask_question');
+});
+
+Route::post('insert_question',[\App\Http\Controllers\questionController::class,'insert_question']);
