@@ -24,4 +24,5 @@ class answerController extends Controller
         $answer->save();
         return redirect("/answers/$answer->question_id")->with('status', "answer has been added");
     }
+
 }

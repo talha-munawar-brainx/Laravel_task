@@ -25,8 +25,11 @@
                     <div class="green_div">{{$question->answers()->count()}} answers</div>
                 </div>
                 <div class="col-10">
-                    <a href="/answers/{{$question->id}}"> {{$question->title}} </a>
-                    <p>{{$question->content}}</p>
+                    <div class="col">
+                        <a href="/answers/{{$question->id}}"> {{$question->title}} </a>
+                        <br>
+                        <p class="question_content">{{$question->content}}</p>
+                    </div>
                     <hr/>
                 </div>
 
