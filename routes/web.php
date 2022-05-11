@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [\App\Http\Controllers\questionController::class,'show'])->name('homePage.show');
+
+Route::get('/answers/{question_id}',[\App\Http\Controllers\answerController::class,'show'])->name('answer.show');
+
+Route::get('/questions/ask', [\App\Http\Controllers\questionController::class, 'create'])->name('question.create',);
+
+Route::post('insert_question', [\App\Http\Controllers\questionController::class, 'store'])->name('question.store');
+
+Route::post('insert_answer', [\App\Http\Controllers\answerController::class, 'store'])->name('answer.store');

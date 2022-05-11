@@ -1,0 +1,42 @@
+body{
+    padding: 20px 15%;
+}
+.header{
+    display: flex;
+}
+.header5{
+    display: flex;
+}
+.header-heading{
+    display: inline-block;
+}
+.header-button{
+    display: inline;
+    margin-left: auto;
+    margin-right: 0;
+}
+.green_div{
+    background-color: limegreen;
+    color: white;
+    width: fit-content;
+    padding: 0 5px;
+}
+.arrows{
+    display: block;
+    width: 40px;
+}
+.form_div{
+    border: 0.5px solid darkgrey;
+    box-shadow: 5px 10px #a0aec0;
+    padding: 20px;
+    margin-top: 40px;
+}
+.question_content{
+    display: inline;
+}
+
+.question_btn{
+    position: relative;
+    margin: auto;
+    right: 0;
+}
