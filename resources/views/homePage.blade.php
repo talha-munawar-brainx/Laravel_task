@@ -17,11 +17,11 @@
 @section('mainContent')
 
     <div class="container">
-        @foreach($questions->sortByDesc('updated_at') as $question)
+        @foreach($questions as $question)
             <div class="row">
                 <div class="col-2">
                     <i class="fa-solid fa-caret-up"></i>
-                    {{$question->question_votes()->count()}} votes
+                    {{$question->question_votes->count()}} votes
                     <div class="green_div">{{$question->answers()->count()}} answers</div>
                 </div>
                 <div class="col-10">

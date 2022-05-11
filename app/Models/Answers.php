@@ -11,7 +11,8 @@ class Answers extends Model
 
     public function answer_votes()
     {
-        return $this->hasMany('App\Models\AnsVotes','answer_id','id');
+        return $this->belongsToMany('App\Models\User','ans_votes','answer_id',
+            'user_id', 'id','id');
     }
 
 }

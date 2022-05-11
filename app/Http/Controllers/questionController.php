@@ -14,13 +14,25 @@ class questionController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function insert_question(Request $request)
+    public function store(Request $request)
     {
         $question = new Questions;
         $question->title = $request->title;
         $question->content = $request->description;
         $question->asked_by = 15;
         $question->save();
-        return redirect('/')->with('staus', "Question has been added");
+        return redirect()->route('homePage')->with('staus', "Question has been added");
+    }
+
+    public function create()
+    {
+        return view('ask_question');
+    }
+
+    public function show()
+    {
+        $questions = Questions::with('question_votes')
+            ->orderBy("updated_at", "desc")->get();
+        return view('homePage', ['questions' => $questions]);
     }
 }

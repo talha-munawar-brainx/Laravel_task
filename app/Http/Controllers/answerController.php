@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Answers;
+use App\Models\Questions;
 use Illuminate\Http\Request;
 
 class answerController extends Controller
@@ -14,7 +15,7 @@ class answerController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function insert_answer(Request $request)
+    public function store(Request $request)
     {
 //        ddd($request);
         $answer = new Answers();
@@ -22,7 +23,17 @@ class answerController extends Controller
         $answer->content = $request->answer;
         $answer->Answered_by = 15;
         $answer->save();
-        return redirect("/answers/$answer->question_id")->with('status', "answer has been added");
+        return redirect()->route('answer',['question_id' => $answer->question_id])
+            ->with('status', "answer has been added");
+    }
+
+    public function show($question_id)
+    {
+        $questions = Questions::with('question_votes')
+            ->orderBy("updated_at", "desc")->get();
+        $answers = Answers::with('answer_votes')->get();
+        return view('answers', ['answers' => $answers->where('question_id', $question_id),
+            'question' => $questions->find($question_id)]);
     }
 
 }

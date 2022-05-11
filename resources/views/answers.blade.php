@@ -6,7 +6,7 @@
         <h3 class="header-heading">
             {{$question->title}}
         </h3>
-        <button onclick="window.location='{{url("/questions/ask")}}'" class="btn btn-primary header-button">Ask
+        <button onclick="window.location='{{route('question')}}'" class="btn btn-primary header-button">Ask
             Question
         </button>
     </div>
