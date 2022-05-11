@@ -23,7 +23,7 @@ class answerController extends Controller
         $answer->content = $request->answer;
         $answer->Answered_by = 15;
         $answer->save();
-        return redirect()->route('answer',['question_id' => $answer->question_id])
+        return redirect()->route('answer.show',['question_id' => $answer->question_id])
             ->with('status', "answer has been added");
     }
 

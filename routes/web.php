@@ -13,16 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//$questions = \App\Models\Questions::with('question_votes')
-//    ->orderBy("updated_at", "desc")->get();
-//$answers = App\Models\Answers::all();
 
-Route::get('/', [\App\Http\Controllers\questionController::class,'show'])->name('homePage');
+Route::get('/', [\App\Http\Controllers\questionController::class,'show'])->name('homePage.show');
 
-Route::get('/answers/{question_id}',[\App\Http\Controllers\answerController::class,'show'])->name('answer');
+Route::get('/answers/{question_id}',[\App\Http\Controllers\answerController::class,'show'])->name('answer.show');
 
-Route::get('/questions/ask', [\App\Http\Controllers\questionController::class, 'create'])->name('question',);
+Route::get('/questions/ask', [\App\Http\Controllers\questionController::class, 'create'])->name('question.create',);
 
-Route::post('insert_question', [\App\Http\Controllers\questionController::class, 'store']);
+Route::post('insert_question', [\App\Http\Controllers\questionController::class, 'store'])->name('question.store');
 
-Route::post('insert_answer', [\App\Http\Controllers\answerController::class, 'store']);
+Route::post('insert_answer', [\App\Http\Controllers\answerController::class, 'store'])->name('answer.store');

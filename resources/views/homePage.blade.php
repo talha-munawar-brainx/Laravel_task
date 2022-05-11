@@ -6,7 +6,7 @@
         <h1 class="header-heading">
             All Questions
         </h1>
-        <button onclick="window.location='{{url("/questions/ask")}}'" class="btn btn-primary header-button">Ask
+        <button onclick="window.location='{{route('question.create')}}'" class="btn btn-primary header-button">Ask
             Question
         </button>
     </div>

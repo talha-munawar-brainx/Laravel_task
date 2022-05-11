@@ -21,7 +21,7 @@ class questionController extends Controller
         $question->content = $request->description;
         $question->asked_by = 15;
         $question->save();
-        return redirect()->route('homePage')->with('staus', "Question has been added");
+        return redirect()->route('homePage.show')->with('staus', "Question has been added");
     }
 
     public function create()

@@ -12,7 +12,7 @@ class Answers extends Model
     public function answer_votes()
     {
         return $this->belongsToMany('App\Models\User','ans_votes','answer_id',
-            'user_id', 'id','id');
+            'user_id', 'id','id')->where('vote',1);
     }
 
 }

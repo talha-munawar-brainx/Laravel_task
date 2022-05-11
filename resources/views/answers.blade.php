@@ -6,7 +6,7 @@
         <h3 class="header-heading">
             {{$question->title}}
         </h3>
-        <button onclick="window.location='{{route('question')}}'" class="btn btn-primary header-button">Ask
+        <button onclick="window.location='{{route('question.create')}}'" class="btn btn-primary header-button">Ask
             Question
         </button>
     </div>
@@ -32,7 +32,7 @@
             </div>
         @endforeach
         <h2>Your Answer</h2>
-        <form method="post" action="{{url('insert_answer')}}">
+        <form method="post" action="{{route('answer.store')}}">
             @csrf <!-- {{ csrf_field() }} -->
             <input type="hidden" name="question_id" value="{{$question->id}}">
             <textarea rows="4" cols="50" name="answer" placeholder="Enter answer here..."></textarea>

@@ -3,7 +3,7 @@
 @section('form')
     <h1>Ask a public Question</h1>
     <div class="form_div">
-        <form method="post" action="{{url('insert_question')}}">
+        <form method="post" action="{{route('question.store')}}">
             @csrf <!-- {{ csrf_field() }} -->
     <h4>Title</h4>
     <p>Be specific and imagine you’re asking a question to another person</p>
