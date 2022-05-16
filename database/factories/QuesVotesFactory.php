@@ -17,7 +17,7 @@ class QuesVotesFactory extends Factory
     public function definition()
     {
         return [
-            'vote' => $this->faker->boolean,
+            'vote' => $this->faker->randomElement([0,1,-1]),
             'question_id' => Questions::factory(),
             'user_id' => User::factory(),
         ];

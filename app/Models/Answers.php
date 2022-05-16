@@ -12,7 +12,17 @@ class Answers extends Model
     public function answer_votes()
     {
         return $this->belongsToMany('App\Models\User','ans_votes','answer_id',
+            'user_id', 'id','id')->withPivot('vote');
+    }
+    public function positive_answer_votes()
+    {
+        return $this->belongsToMany('App\Models\User','ans_votes','answer_id',
             'user_id', 'id','id')->where('vote',1);
+    }
+    public function negative_answer_votes()
+    {
+        return $this->belongsToMany('App\Models\User','ans_votes','answer_id',
+            'user_id', 'id','id')->where('vote',-1);
     }
 
 }

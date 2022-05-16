@@ -9,7 +9,5 @@ class QuesVotes extends Model
 {
     use HasFactory;
 
-    public $vote;
-    public $question_id;
-    public $user_id;
+
 }

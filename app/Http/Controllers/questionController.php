@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Questions;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class questionController extends Controller
@@ -16,10 +17,11 @@ class questionController extends Controller
 
     public function store(Request $request)
     {
+        $user = auth()->user();
         $question = new Questions;
         $question->title = $request->title;
         $question->content = $request->description;
-        $question->asked_by = 15;
+        $question->asked_by = $user->id;
         $question->save();
         return redirect()->route('homePage.show')->with('staus', "Question has been added");
     }
