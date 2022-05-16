@@ -20,9 +20,12 @@
         @foreach($questions as $question)
             <div class="row">
                 <div class="col-2">
-                    <i class="fa-solid fa-caret-up"></i>
-                    {{$question->question_votes->count()}} votes
+                    <button class="btn" onclick="window.location='{{route('QuestionVote.store',
+                    ['question_id' => $question->id,'vote' => 1])}}'"><i class="fa-solid fa-caret-up"></i></button>
+                    {{$question->positive_question_votes->count() - $question->negative_question_votes->count()}} votes
                     <div class="green_div">{{$question->answers()->count()}} answers</div>
+                    <button class="btn" onclick="window.location='{{route('QuestionVote.store',
+                    ['question_id' => $question->id,'vote' => -1])}}'"><i class="fa-solid fa-caret-down"></i></button>
                 </div>
                 <div class="col-10">
                     <div class="col">

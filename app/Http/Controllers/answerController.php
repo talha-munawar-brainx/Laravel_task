@@ -17,23 +17,23 @@ class answerController extends Controller
 
     public function store(Request $request)
     {
-//        ddd($request);
+        $user = auth()->user();
         $answer = new Answers();
         $answer->question_id = $request->question_id;
         $answer->content = $request->answer;
-        $answer->Answered_by = 15;
+        $answer->Answered_by = $user->id;
         $answer->save();
         return redirect()->route('answer.show',['question_id' => $answer->question_id])
             ->with('status', "answer has been added");
     }
 
-    public function show($question_id)
+    public function show(Request $request, $question_id)
     {
-        $questions = Questions::with('question_votes')
-            ->orderBy("updated_at", "desc")->get();
-        $answers = Answers::with('answer_votes')->get();
-        return view('answers', ['answers' => $answers->where('question_id', $question_id),
-            'question' => $questions->find($question_id)]);
+//        ddd($question_id);
+        $question = Questions::with(['question_votes','answers.answer_votes'])
+            ->orderByDesc("updated_at")->where('id',$question_id)->firstOrFail();
+
+        return view('answers', ['questions' => $question]);
     }
 
 }

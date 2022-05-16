@@ -16,7 +16,7 @@ class CreateAnsVotesTable extends Migration
         Schema::create('ans_votes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->boolean('vote');
+            $table->integer('vote');
             $table->integer('answer_id');
             $table->integer('user_id');
         });

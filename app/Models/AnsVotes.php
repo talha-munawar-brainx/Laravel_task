@@ -9,7 +9,5 @@ class AnsVotes extends Model
 {
     use HasFactory;
 
-    public $vote;
-    public $answer_id;
-    public $user_id;
+
 }

@@ -17,7 +17,7 @@ class AnsVotesFactory extends Factory
     public function definition()
     {
         return [
-            'vote' => $this->faker->boolean,
+            'vote' => $this->faker->randomElement([0,1,-1]),
             'answer_id' => Answers::factory(),
             'user_id' => User::factory(),
         ];
